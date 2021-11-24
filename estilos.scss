@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+
+
+}
+
+img {
+  border: 3px solid #000;
+}
+
+h1 {
+  color: white;
+}
+
+body {
+
+  background-image: url(img/sultan-ahmet-mosque-6604492_1920.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+table {
+  color: white;
+}
+
+.fsize {
+  font-size: x-small;
+}
+
+
+.taling {
+  text-align: center;
+}
+
+header {
+  background-color: white;
+}
+
+.tdecoration {
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: 'Crimson Text', serif;
+}
+
+
+
+nav {
+  background-color: gray;
+  height: 80px;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  font-size: 20px;
+
+}
+
+nav a:hover {
+  color: black
+}
+
+ul li {
+  display: inline-block;
+
+  margin-right: 10px;
+}
+
+h3 {
+  width: $ancho*2;
+  height: 100px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
+}
+
+.galeria h1 {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: rgb(235, 235, 235);
+
+
+
+}
+
+.contenedor {
+  width: 90%;
+  height: auto;
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+
+}
+
+
+
+
+
+.item {
+  min-height: 200px;
+  min-width: 200px;
+  background-color: darkgreen;
+  border: 2px solid white;
+
+
+}
+
+
+
+.item1 {
+  background-color: yellow;
+  grid-column: 1;
+  grid-row: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: url(img/perro.png);
+  background-size: cover;
+  background-position: center;
+  transition: all 20s;
+
+
+}
+
+.item2 {
+  grid-area: "item2";
+  background-color: cadetblue;
+  background-image: url(img/remera\ rosa.png);
+  background-size: cover;
+
+}
+
+
+.item3 {
+  grid-area: "item4";
+  background-color: firebrick;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url(img/cara.png);
+  background-size: cover;
+
+}
+
+.item4 {
+  grid-area: "item5";
+  background-color: forestgreen;
+  background-image: url(img/conejo.png);
+  background-size: cover;
+
+
+}
+
+.item5 {
+  grid-area: "item6";
+  background-color: hotpink;
+  background-image: url(img/tarjeta.png);
+  background-size: cover;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.item1:hover {
+  height: 500px;
+  width: 500px;
+}
+
+.item2:hover {
+  height: 500px;
+  width: 500px;
+}
+
+.item3:hover {
+  height: 500px;
+  width: 500px;
+}
+
+.item4:hover {
+  height: 500px;
+  width: 500px;
+}
+
+.item5:hover {
+  height: 500px;
+  width: 500px;
+}
+
+.sec {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+
+
+}
+
+.carousel-indicators li {
+  border-radius: ($borde2)-($borde);
+  height: 20px;
+  width: 20px;
+
+
+}
+
+
+@media only screen and (min-width: 320px) {
+  .fondo {
+    color: rgb(0, 235, 0);
+    background-color: rgb(190, 28, 28);
+    font-size: 100px;
+  }
+}
+
+@media only screen and(min-width:480px) {
+  .fondo {
+    background-color: rgb(7, 52, 119);
+    color: white;
+    font-size: 100px;
+
+  }
+}
+
+@media only screen and(min-width:576px) {
+  .fondo {
+    color: darkgoldenrod;
+    background-color: tomato;
+  }
+}
+
+@media (max-width:600px) and (orientation:portrait) {
+  header {
+    text-align: left;
+    background-color: darkorange;
+  }
+}
+
+footer {
+  height: $alto*2;
+  background-color: grey;
+  background-image: linear-gradient(grey, black)
+}
+
+$borde:50%;
+$borde2:100%;
+$ancho:50px;
+$alto:5vh;
